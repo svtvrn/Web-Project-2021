@@ -152,7 +152,7 @@ header {
 
 .album_gallery {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 .album_gallery img {
   padding: 2px 2px;
