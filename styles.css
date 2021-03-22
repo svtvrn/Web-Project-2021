@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #1c1d1f;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+#logo {
+  cursor: pointer;
+  padding-left: 200px;
+}
+
+.navbar {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding-right: 200px;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 0px 30px;
+}
+
+.main_container {
+  font-family: 'Lora', serif;
+  background-color: #f5efeb;
+  color: #000;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.contents li {
+  font-size: 18px;
+}
+
+.inner {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 1px 1px #1c1d1f15;
+  padding: 20px 50px;
+  margin: 5px 150px 5px;
+}
+
+.inner h2 {
+  font-size: 28px;
+}
+
+.inner h3 {
+  font-size: 24px;
+}
+
+.inner p {
+  font-size: 20px;
+}
+
+.inner a {
+  color: black;
+  text-decoration: underline;
+}
+.inner form {
+  display: block;
+  line-height: 2;
+}
+
+.inner label {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.inner input {
+  display: block;
+  width: 20%;
+  margin: 1% 0px;
+  line-height: 2;
+}
+
+#submit_button {
+  background-color: #1c1d1f;
+  border-radius: 20px;
+  font-size: 22px;
+  font-family: 'Karla', sans-serif;
+  color: azure;
+  border: 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 100px;
+}
+
+#submit_button:hover {
+  color: #13cfa9;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+.inner img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0px;
+}
+
+.inner figcaption {
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.footer {
+  background-color: #24252a;
+  background-size: cover;
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  color: azure;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5% 20%;
+}
+
+.social {
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+}
+.social ul {
+  list-style: none;
+}
+
+.social li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.album_gallery {
+  display: flex;
+  align-items: center;
+}
+.album_gallery img {
+  padding: 2px 2px;
+}
+
+#albums li {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4;
+}
+
+#contact a {
+  text-decoration: underline;
+}
+
+#instagram path {
+  fill: #f5efeb;
+}
+
+#linkedin path {
+  fill: #f5efeb;
+}
+
+#spotify path {
+  fill: #f5efeb;
+}
+
+a {
+  color: azure;
+  text-decoration: none;
+}
+a:hover {
+  color: #13cfa9;
+  transition: all 0.4s ease 0s;
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

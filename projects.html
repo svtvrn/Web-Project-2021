@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Chasapis Nikos: Projects</title>
+        <link rel="icon" href="images/title_icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="navbar">
+            <img id="logo" src="images/logo.png" alt="Logo" width="302" height="51">
+            <nav>
+                <ul>
+                    <li><a href="index2.html">Bio</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="music.html">Music & Arts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main_container">
+            <div class="inner">
+                <section id="intro">
+                    <h2>Overview</h2>
+                    <p>
+                        I joined the <a href="https://aueb.gr/">AUEB</a> team back in 2017, four years have gone by since then and I've had the opportunity to work on lots
+                        of very interesting projects along some very bright academics. Following are some of my personal favorite projects,projects that I had fun taking 
+                        part in, despite all the hardships along the way. You can also find my Github profile by clicking <a href="https://github.com/svtvrn?tab=repositories">here</a>!
+                    </p>
+                </section>
+                <div class="contents">
+                    <h3>Contents</h3>
+                    <nav>
+                        <ol>
+                            <li><a href="#ml">Machine Learning Project</a></li>
+                            <li><a href="#web">WebAudio Synthesizer</a></li>
+                            <li><a href="#fridge">Smart Fridge GUI</a></li>
+                        </ol>
+                    </nav>
+                </div>
+                <main>
+                    <article id="machine">
+                        <h2 id="ml">Machine Learning Project</h2>
+                        <p>
+                            The first project I'd like to talk about is also probably my favorite one so far and it's the second assignment of the Artificial
+                            Intelligence course. It focused on classic machine learning algorithms like Naive Bayes, decision trees, boosting ensembles and
+                            regressions. Our task was to rebuild those algorithms from scratch the best we could, train them on a provided dataset and then
+                            test how well we did using a testing dataset. My team and I managed to make 4 different algorithms and achieve really good accuracy
+                            scores, matching the ones from the <a href="https://scikit-learn.org/stable/">Sklearn library</a> with just a slight difference
+                            (mostly around 1-2%). Below you can see how well our Naive Bayes algorithm was able to classify the data.    
+                        </p>
+                        <figure id="bayes_acc">
+                            <img src="images/bayes.png" alt="Bayes accuracy" width="799" height="476">
+                            <figcaption>Fig. 1: Naive Bayes accuracy</figcaption>
+                        </figure>
+                        <p>As you can see we were able to make our model predict with accuracy up to 84%, matching the Sklearn classifier!</p>
+                    </article>
+                    <article id="synth">
+                        <h2 id="web">WebAudio Synthesizer</h2>
+                        <p>
+                            The second project I'll be showing off is a browser based application created with the help of the WebAudio API, a JavaScript
+                            based library that helps developers add audio context to their websites. We went a step further beyond and created a modular
+                            synthesizer for browsers, called Synthy Boi.
+                        </p>
+                        <figure id="synth_main">
+                            <img src="images/synth.png" alt="Synthy Boi interface" width="940" height="450">
+                            <figcaption>Fig. 2: Synthy Boi main interface</figcaption>
+                        </figure>
+                        <p>
+                            The app provided all the basic notes of the 4th octave plus the C note of the 5th octave. From there the user can modify the 
+                            sound output however they please, from pretty basic features like changing the amplifier gain (volume) and the waveform type,
+                            to more advanced options like ADSR envelope, control of the bass and treble frequencies, distortion and more. Further effects
+                            like tremolo and vibrato where also added as well as an oscilloscope which allowed us to visualize the waveform as it's being
+                            modified.
+                        </p>
+                    </article>
+                    <article id = "gui">
+                        <h2 id="fridge">Smart Fridge GUI</h2>
+                        <p>
+                            For the final project I chose the smart fridge graphical user interface we developed for the Human Computer Interaction course.
+                            This is a project in which we had the freedom to develop a GUI for any home appliance we wanted. Why a fridge out of all things
+                            you might ask, well the choice mostly came down to 2 things: 1) No other team was developing a fridge GUI and 2) We thought it 
+                            was also really fun to go a bit "over the top" for a fridge app, since even big companies like Samsung keep adding more ridiculous 
+                            features to their fridges like <a href="https://www.samsung.com/us/explore/family-hub-refrigerator/overview/">cameras</a>. Due to 
+                            time limitations we couldn't add a camera ourselves, but we did manage to create a note/drawing view for it  where the user can
+                            keep notes or simply draw a funny cartoon. The project was developed for Android using the Android Studio platform under the name
+                            UIce.
+                        </p>
+                        <figure id="uice_main">
+                            <img src="images/uice_main.png" alt="UIce interface" width="353" height="662">
+                            <figcaption>Fig. 3.1: UIce main interface</figcaption>
+                        </figure>
+                        <figure id=uice_logo>
+                            <img src="images/uice_icon.png" alt="UIce Logo" width="410" height="410">
+                            <figcaption>Fig. 3.2: UIce Logo</figcaption>
+                        </figure>
+                        <p>
+                            All the icons were created by me from scratch in Adobe XD, using the SVG format for rescalability and the highest image quality
+                            possible.
+                        </p>
+                    </article>
+                </main>
+            </div>
+        </div>
+        <footer class="footer">
+            <h3 id="contact"><a href="contact.html">Contact me here.</a></h3>
+            <div class="social">
+                <h3>Follow me on:</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/nikos.chasapis/?hl=el">
+                            <svg id="instagram" xmlns="http://www.w3.org/2000/svg" width="50" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771
+                                1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204
+                                0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919
+                                1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014
+                                3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948
+                                0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163
+                                6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796
+                                0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/nikos-chasapis-18091a209/">
+                            <svg id="linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5
+                                5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79
+                                1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/user/11101544596?si=18upQAT3Rzq5nyP2Y2xeeg">
+                            <svg id="spotify" xmlns="http://www.w3.org/2000/svg" width="48" height="24" viewBox="0 0 24 24"><path d="M19.098 
+                                10.638c-3.868-2.297-10.248-2.508-13.941-1.387-.593.18-1.22-.155-1.399-.748-.18-.593.154-1.22.748-1.4 4.239-1.287
+                                11.285-1.038 15.738 1.605.533.317.708 1.005.392 1.538-.316.533-1.005.709-1.538.392zm-.126 3.403c-.272.44-.847.578-1.287.308-3.225-1.982-8.142-2.557-11.958-1.399-.494.15-1.017-.129-1.167-.623-.149-.495.13-1.016.624-1.167
+                                4.358-1.322 9.776-.682 13.48 1.595.44.27.578.847.308 1.286zm-1.469 3.267c-.215.354-.676.465-1.028.249-2.818-1.722-6.365-2.111-10.542-1.157-.402.092-.803-.16-.895-.562-.092-.403.159-.804.562-.896 4.571-1.045 8.492-.595
+                                11.655 1.338.353.215.464.676.248 1.028zm-5.503-17.308c-6.627 0-12 5.373-12 12 0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+    
+</html>
