@@ -1,26 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
-body {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
   background-color: #1c1d1f;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
-}
-
-#logo {
-  cursor: pointer;
-  padding-left: 200px;
-}
-
 .navbar {
+  background-color: #1c1d1f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0px;
   font-family: 'Karla', sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -28,32 +24,42 @@ header {
 
 .navbar ul {
   list-style: none;
-  padding-right: 200px;
 }
 
 .navbar li {
   display: inline-block;
-  padding: 0px 30px;
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: azure;
+}
+
+.navbar a:hover {
+  color: #13cfa9;
+  transition: all 0.4s ease 0s;
 }
 
 .main_container {
-  font-family: 'Lora', serif;
   background-color: #f5efeb;
-  color: #000;
+  display: flex;
   align-items: center;
-  padding: 30px 10%;
-}
-
-.contents li {
-  font-size: 18px;
+  justify-content: center;
 }
 
 .inner {
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 1px 1px #1c1d1f15;
-  padding: 20px 50px;
-  margin: 5px 150px 5px;
+  font-family: 'Lora', serif;
+  color: #000000;
+  margin: 30px 11vw;
+  padding: 20px 40px;
+}
+
+.inner section {
+  padding: 20px 0;
 }
 
 .inner h2 {
@@ -66,12 +72,121 @@ header {
 
 .inner p {
   font-size: 20px;
+  padding: 15px 0;
 }
 
 .inner a {
-  color: black;
   text-decoration: underline;
 }
+
+.inner ol {
+  list-style-position: inside;
+}
+
+.vertical {
+  width: 20vw;
+  height: auto;
+}
+
+.horizontal {
+  width: 60vw;
+  height: auto;
+}
+
+.inner figure {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.inner figcaption {
+  font-weight: 600;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+#albums ol {
+  padding-top: 20px;
+}
+
+#albums li {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.album_gallery {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 60vw;
+}
+
+.album_gallery img {
+  width: 22vw;
+  height: auto;
+  padding: 0 2px;
+}
+
+.inner iframe {
+  display: block;
+  margin: 50px 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 56vw;
+  height: 54vh;
+}
+
+.contents li {
+  font-size: 18px;
+}
+
+.footer {
+  background-color: #24252a;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 60px 0;
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  color: azure;
+}
+
+.footer a {
+  color: azure;
+}
+
+.footer a:hover {
+  color: #13cfa9;
+  transition: all 0.4s ease 0s;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social li {
+  margin: 0 10px;
+}
+
+.social path {
+  fill: azure;
+}
+
+.social svg:hover path {
+  fill: #13cfa9;
+  transition: all 0.4s ease 0s;
+}
+
 .inner form {
   display: block;
   line-height: 2;
@@ -85,8 +200,8 @@ header {
 
 .inner input {
   display: block;
-  width: 20%;
-  margin: 1% 0px;
+  width: 250px;
+  margin: 20px 0;
   line-height: 2;
 }
 
@@ -108,90 +223,4 @@ header {
   color: #13cfa9;
   transition: all 0.4s ease 0s;
   cursor: pointer;
-}
-
-.inner img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 0px;
-}
-
-.inner figcaption {
-  text-align: center;
-  font-weight: 600;
-  font-style: italic;
-  padding-top: 5px;
-  padding-bottom: 20px;
-}
-
-.footer {
-  background-color: #24252a;
-  background-size: cover;
-  font-family: 'Lora', serif;
-  font-size: 14px;
-  color: azure;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 5% 20%;
-}
-
-.social {
-  display: flex;
-  justify-content: normal;
-  align-items: center;
-}
-.social ul {
-  list-style: none;
-}
-
-.social li {
-  display: inline-block;
-  padding: 0px 10px;
-}
-
-.album_gallery {
-  display: flex;
-  justify-content: center;
-}
-.album_gallery img {
-  padding: 2px 2px;
-}
-
-#albums li {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 4;
-}
-
-#contact a {
-  text-decoration: underline;
-}
-
-#instagram path {
-  fill: #f5efeb;
-}
-
-#linkedin path {
-  fill: #f5efeb;
-}
-
-#spotify path {
-  fill: #f5efeb;
-}
-
-a {
-  color: azure;
-  text-decoration: none;
-}
-a:hover {
-  color: #13cfa9;
-  transition: all 0.4s ease 0s;
-}
-
-iframe {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
