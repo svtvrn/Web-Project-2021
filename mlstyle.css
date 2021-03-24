@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 80px 1fr 1fr 100px;
+  gap: 5px;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: #662952;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  width: 22rem;
+  height: auto;
+}
+
+.contents {
+  grid-column-start: 1;
+}
+
+.main_content {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: block;
+  padding: 5rem 1.2rem;
+  font-family: 'Old Standard TT', serif;
+  text-align: center;
+}
+
+.main_content h1 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.article_link {
+  grid-column-start: 3;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(197, 184, 83);
+  border-top: 1px solid #662952ad;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #662952;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
