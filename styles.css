@@ -62,6 +62,15 @@ body {
   padding: 20px 0;
 }
 
+.inner h1 {
+  font-family: 'Karla', sans-serif;
+  font-size: 38px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  text-decoration: underline double;
+}
+
 .inner h2 {
   font-size: 28px;
 }
