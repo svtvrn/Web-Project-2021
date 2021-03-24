@@ -40,15 +40,26 @@
   grid-column-start: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  display: block;
+  display: flex;
+  justify-content: center;
   padding: 5rem 1.2rem;
   font-family: 'Old Standard TT', serif;
-  text-align: center;
+  text-align: left;
+}
+
+#cnn_gif {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem 0;
 }
 
 .main_content h1 {
   font-size: 2rem;
   padding-bottom: 2rem;
+}
+
+.main_content p {
+  font-size: 1.7rem;
 }
 
 .article_link {
