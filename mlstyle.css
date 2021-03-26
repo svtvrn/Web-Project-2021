@@ -16,7 +16,7 @@
   font-size: 1.2rem;
   display: grid;
   grid-template-columns: 0.8fr 2fr 0.8fr;
-  grid-template-rows: 0.1fr 1fr 0.15fr;
+  grid-template-rows: 6rem 1fr 9rem;
   grid-template-areas:
     'header header header'
     'sidebar main_content article_links'
@@ -46,19 +46,30 @@
   text-align: left;
 }
 
-#cnn_gif {
+.media {
   width: 100%;
   height: auto;
   margin: 1.5rem 0;
 }
 
 .main_content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.main_content h2 {
   font-size: 2rem;
-  padding-bottom: 2rem;
+  margin: 3rem 0 2rem;
 }
 
 .main_content p {
   font-size: 1.7rem;
+  margin: 2rem 0;
+}
+
+.main_content a {
+  font-size: 1.7rem;
+  color: #000;
 }
 
 .sidebar {

@@ -16,9 +16,48 @@
             </div>
             <main class="main_content">
                 <article>
-                    <h1>How Convolutional Neural Networks took over the Artificial Intelligence world</h1>
-                    <p>From Kunihiko Fukushima's "neocognitron" in the early 1980's all the way until 2021 and Google's TensorFlow.</p>
-                    <img id="cnn_gif" src="images/neural.gif" width="1500" height="900" alt="Neural Network GIF">
+                    <section id="doc_title">
+                        <h1>How Convolutional Neural Networks took over the Artificial Intelligence world</h1>
+                        <p>From Kunihiko Fukushima's "neocognitron" in the early 1980's all the way until 2021 and Google's TensorFlow.</p>
+                        <img id="cnn_gif" class="media" src="images/neural.gif" width="1500" height="900" alt="Neural Network GIF">
+                    </section>
+                    <section id="intro">
+                        <h2>Introduction to Convolutional Neural Networks</h2>
+                        <p>
+                            Convolutional Neural Networks - also known as CNNs - are deep neural networks that specify on image classification and
+                            are currently one of the hottest topics in the computer vision science. They are primarily used in image clustering
+                            based on similarity, object recognition within a scene and optical character recognition (OCR) for text digitization.
+                            OCR is currently one of the driving forces in natural language processing (NLP) making the processing of both analog
+                            and hand-written documents possible.
+                        </p>
+                        <p>
+                            Deep learning owes its popularity, in the recent years, to the success of <a href="https://en.wikipedia.org/wiki/AlexNet">AlexNet</a>,
+                            a deep convolutional network that was used to win the 2012 <a href="http://www.image-net.org/">ImageNet</a> competition, with a significant
+                            lead over the runner-up. It was only a few years later in 2015 that AlexNet was outperformed by Microsoft's deep CNN in ImageNet's
+                            competition. So in a sense the interest in deep learning finds its roots in the rise of convolutional networks.
+                        </p>                                       
+                    </section>
+                    <section id="function">
+                        <h2>How do Convolutional Networks work?</h2>
+                        <p>
+                            Unlike humans the network percieves an image as a volume; i.e. a three-dimensional object in the case of an RGB photograph
+                            (3 channels: red, green, blue). The network is "fed" such images as three separate layers of color stacked one on top of
+                            the other. In the case of a grey-scale photograph we only have one such channel.
+                        </p>
+                        <img class="media" src="images/channels.png" width="1505" height="731" alt="Grey scale and RGB Image layers">
+                        <p>
+                            The input and output of the network can be expressed mathematically by multi-dimensional matrices in which the initial values
+                            are the intensity of every pixel (one value per channel). After passing through a convolutional layer, the image becomes 
+                            abstracted to a feature map with the use of a <a href="https://en.wikipedia.org/wiki/Tensor"> tensor</a>. That new image may
+                            not provide any info to a human but the network will pass the convolved image onto the next layer and so on, until only a 1-hot
+                            vector is left. That vector is then "fed" into a classic neural network like a <a href="https://en.wikipedia.org/wiki/Multilayer_perceptron"> multilayer perceptron</a>.
+                        </p>
+                        <p>
+                            A common practice seen in in convolutional networks is the inclusion of pooling layers. Pooling layers reduce the dimensions of
+                            the data by combining the outputs of the convolutional layer into a single input for the next level. Weights (also called features)
+                            can be used as an input vector and they represent particular features of the input, for example; a particular shape.
+                        </p>
+                    </section>
                 </article>
             </main>
             <div id="articles" class="article_links">
