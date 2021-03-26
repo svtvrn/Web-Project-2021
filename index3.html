@@ -7,27 +7,34 @@
         <link rel="stylesheet" href="mlstyle.css">
     </head>
     <body>
-        <div class="container">
-            <div class="header">
+        <div class="grid">
+            <header class="header">
                 <img id="logo" src="images/perceptron.svg" width="357" height="61" alt="Perceptron">         
+            </header>
+            <div id="content_nav" class="sidebar">
+                <div class="contents"></div>
             </div>
-            <div id="content_nav" class="contents">Le contents</div>
-            <div class="main_content">
+            <main class="main_content">
                 <article>
                     <h1>How Convolutional Neural Networks took over the Artificial Intelligence world</h1>
-                    <p>From humble beginnings with the "neocognitron" in the early 1980's all the way up to 2021 and Keras.</p>
+                    <p>From Kunihiko Fukushima's "neocognitron" in the early 1980's all the way until 2021 and Google's TensorFlow.</p>
                     <img id="cnn_gif" src="images/neural.gif" width="1500" height="900" alt="Neural Network GIF">
                 </article>
-            </div>
+            </main>
             <div id="articles" class="article_links">
-                <ul>
-                    <li id="link_1">Article1</li>
-                    <li id="link_2">Article2</li>
+                <ul id="links">    
+                    <li>
+                        <img src="images/jupyter.png" width="1500" height="864" alt="Jupyter Notebook Editor">
+                        <p>Get started with the Jupyter notebook editor today.</p>
+                    </li>
+                    <li>
+                        <p>Iwanna Capapi</p>
+                    </li>
                 </ul>
             </div>
-            <div class="footer">
+            <footer class="footer">
                 <h4>Copyright 2021</h4>
-            </div>
+            </footer>
         </div>
     </body>
 </html>
