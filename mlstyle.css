@@ -34,6 +34,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: sticky;
 }
 
 #logo {
@@ -84,18 +85,19 @@ html {
 }
 
 .sidebar nav {
-  position: fixed;
-  top: 32%;
+  position: sticky;
+  top: 15rem;
+  max-height: 20rem;
   padding: 1vh 0.5vw;
   border-radius: 0.2vw;
-  background-color: #da5700;
+  margin-right: 2vw;
+  margin-top: 22rem;
   font-family: 'Fira Sans', sans-serif;
-  box-shadow: 0.2vw 0.2vw rgba(0, 0, 0, 0.438);
 }
 
 .sidebar nav p {
   font-size: 1.1vw;
-  color: #fff;
+  color: rgb(83, 83, 83);
 }
 
 .sidebar ol {
@@ -105,14 +107,28 @@ html {
 
 .sidebar li {
   margin: 2vh 0;
-  color: #fff;
+  color: rgb(83, 83, 83);
   font-size: 1vw;
 }
 
 .sidebar li a {
   font-size: 1vw;
   text-decoration: none;
-  color: #fff;
+  color: rgb(83, 83, 83);
+}
+
+.sidebar li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0.1vh;
+  background: linear-gradient(
+    90deg,
+    rgba(102, 41, 82, 0.5018382352941176) 0%,
+    rgba(102, 41, 82, 1) 50%,
+    rgba(102, 41, 82, 0.5046393557422969) 100%
+  );
+  transition: width 0.4s;
 }
 
 .sidebar li a:hover {
@@ -120,10 +136,14 @@ html {
   transition: all 0.4s ease 0s;
 }
 
+.sidebar li a:hover::after {
+  width: 100%;
+}
+
 .article_links {
   grid-area: article_links;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -137,10 +157,11 @@ html {
 }
 
 .article_links ul {
-  position: fixed;
-  top: 30%;
+  position: sticky;
+  top: 15rem;
   list-style: none;
-  margin: 2vh 1.5vw;
+  margin: 0 1.5vw;
+  margin-top: 22rem;
 }
 
 .article_links li {
