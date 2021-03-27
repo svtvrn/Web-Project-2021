@@ -25,13 +25,13 @@
                             <a href="#neocognitron">Neocognitron</a>
                         </li>
                         <li>
-                            <a href="#">TensorFlow</a>
+                            <a href="#gpus">GPU implementations</a>
                         </li>
                     </ol>
                 </nav>
             </div>
             <main class="main_content">
-                <article>
+                <article id="cnn_history">
                     <section id="doc_title">
                         <h1>How Convolutional Neural Networks took over the Artificial Intelligence world</h1>
                         <p>From Kunihiko Fukushima's "neocognitron" in the early 1980's all the way until 2021 and Google's TensorFlow.</p>
@@ -129,7 +129,28 @@
                         </p>
                         <img class="media" src="images/neocognitron.PNG" width="1176" height="684" alt="Neocognitron schema diagram" >
                     </section>
+                    <section id="gpus">
+                        <h2>GPU implementations and the acceleration of CNNs</h2>
+                        <p>
+                            One of the biggest breakthroughs in the history of convolutional networks and deep learning came in 2004, when K. S. Oh and K. Jung
+                            discovered that standard neutral networks could be greatly accelerated by using a graphics processing unit (GPU) instead of a CPU.
+                            The first GPU implementation of a convolutional neural network was described two years later in 2006 by  K. Chellapilla et al. 
+                            Chellapilla's implementation was 4 times faster than the equilevant implementation on a CPU 
+                        </p>
+                        <img class="media" src="images/cores.png" width="1013" height="632" alt="CPU vs GPU cores">
+                        <p>
+                            The advantage of the GPU over the CPU is tied to the GPU's architecture. GPUs were created to compute graphics, to create and process images 
+                            which means they must be able to process lots of data at once. To do that, GPUs use a lot of "weaker" processors in order
+                            to make as many computations as possible, wheras a standard 4-core CPU is pretty limited in doing many computations in parallel. You can now
+                            see why GPUs are perfect for calculating these big matrices since most operations can be easily decomposed to parts which can be completed
+                            independently. If you wanna learn more about the GPU implementations and how CUDA played a big role in that click
+                            <a href="https://en.wikipedia.org/wiki/CUDA">here</a>!
+                        </p>
+                    </section>
                 </article>
+                <div class="backtop">
+                    <a href="#">RETURN TO THE TOP</a>
+                </div>
             </main>
             <div id="articles" class="article_links">
                 <ul id="links">    

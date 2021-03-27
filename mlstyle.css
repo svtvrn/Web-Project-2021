@@ -45,6 +45,7 @@ html {
 .main_content {
   grid-area: main_content;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 5rem 0.5rem;
   font-family: 'Old Standard TT', serif;
@@ -112,6 +113,20 @@ html {
 .main_content a {
   font-size: 1.7rem;
   color: #000;
+}
+
+.main_content .backtop {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.main_content .backtop a {
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: rgba(181, 28, 129);
 }
 
 .sidebar {
@@ -203,6 +218,7 @@ html {
   list-style: none;
   margin: 0 1.5vw;
   margin-top: 27rem;
+  margin-bottom: 1.5rem;
 }
 
 .article_links li {
