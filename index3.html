@@ -55,8 +55,22 @@
                         <p>
                             A common practice seen in in convolutional networks is the inclusion of pooling layers. Pooling layers reduce the dimensions of
                             the data by combining the outputs of the convolutional layer into a single input for the next level. Weights (also called features)
-                            can be used as an input vector and they represent particular features of the input, for example; a particular shape.
+                            can be used as an input vector and they represent specific features of the input, for example; a particular shape. Those weights are
+                            trained with the help of the backpropagation algorithm.
                         </p>
+                        <p>
+                            Below is the diagram of a forward-feeding CNN.
+                        </p>
+                        <img class="media" src="images/cnn_example.png" width="1498" height="622" alt="CNN diagram of a digit" >
+                    </section>
+                    <section id="neocognitron">
+                        <h2>Neocognitron, origin of the CNN architecture</h2>
+                        <p>
+                            First introduced in 1980 by Kunihiko Fukushima the neocognitron is considered the first convolutional neural network included two types
+                            of layers: convolutional layers and downsampling layers. The convolutional layer contains units whose fields cover a part of the previous
+                            layer, while the downsampling layer works similarly to the pooling layer by computing the average of the activations of the units in its patch.
+                        </p>
+                        <img class="media" src="images/neocognitron.PNG" width="1176" height="684" alt="Neocognitron schema diagram" >
                     </section>
                 </article>
             </main>
