@@ -79,7 +79,7 @@
 .article_links {
   grid-area: article_links;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -93,6 +93,8 @@
 }
 
 .article_links ul {
+  position: fixed;
+  top: 30%;
   list-style: none;
   margin: 2vh 1.5vw;
 }
