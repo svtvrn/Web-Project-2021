@@ -16,26 +16,26 @@
                     <p>Contents</p>
                     <ol>
                         <li>
-                            <a href="#intro">Introduction</a>
+                            <a href="#history">History</a>
                         </li>
                         <li>
-                            <a href="#install">Installation</a>
+                            <a href="#advantages">Advantages</a>
                         </li>
                         <li>
-                            <a href="#launch">Launch Jupyter</a>
+                            <a href="#mobile">PyTorch Mobile</a>
                         </li>
                     </ol>
                 </nav>
             </div>
             <main class="main_content">
-                <article id="jupyter_guide">
+                <article id="pytorch_rise">
                     <section id="doc_title">
                         <h1>The continuous growth of PyTorch in enteprise adoption</h1>
-                        <p>Write your first python notebook with Jupyter in a few minutes.</p>
+                        <p>More and more data scientists are shifting over to Facebook's open source deep learning API.</p>
                         <div class="author">
                             <div class="author_info">
                                 <h4>Author: <a href="#">Nikos Chasapis</a></h4>
-                                <h4>Date: Mar. 28, 2021</h4>
+                                <h4>Date: Mar. 31, 2021</h4>
                             </div>
                             <div class="social">
                                 <ul>
@@ -73,61 +73,60 @@
                                 </ul>
                             </div>
                         </div>
-                        <img class="media" src="images/jupyter.png" width="1500" height="900" alt="Neural Network GIF">
+                        <img class="media" src="images/pytorch.png" width="1500" height="900" alt="Neural Network GIF">
                     </section>
-                    <section id="intro">
-                        <h2>What is a Jupyter Notebook?</h2>
+                    <section id="history">
+                        <h2>The brief history of PyTorch</h2>
                         <p>
-                            Jupyter is an acronym meaning Julia, Python, and R. These programming languages were the original use
-                            case for Jupyter although it now supports many other languages. The main components to the whole
-                            environment are the notebooks themselves, the application, the notebook kernel and the notebook dashboard.
+                            Deep learning uses multi-layered neural networks to automate historically difficult machine
+                            tasks—such as image recognition, natural language processing, and machine translation—at scale.
+                            TensorFlow, which emerged out of Google in 2015, has been the most popular open source deep learning
+                            framework for both research and business. But PyTorch, which emerged out of Facebook in 2016, has quickly
+                            caught up, thanks to community-driven improvements in ease of use and deployment.
                         </p>
+                        <img class="media" width="826" height="390" src="images/versus.png" alt="TensorFlow versus PyTorch" >
                         <p>
-                            Jupyter is a server-client application, meaning it allows you to edit and run your notebooks via a web
-                            browser. The application can be executed on a PC without Internet access, or it can be installed on a remote
-                            server where you can access it through the internet.
+                            Facebook operates both PyTorch and Convolutional Architecture for Fast Feature Embedding (Caffe2), but models
+                            defined by the two frameworks were mutually incompatible. The Open Neural Network Exchange (ONNX) project was
+                            created by Facebook and Microsoft in September 2017 for converting models between frameworks. Caffe2 was
+                            merged into PyTorch at the end of March 2018.
                         </p>
-                        <p>
-                            A "notebook" is a document that contain both code and rich text elements, such as figures, links, equations,
-                            etc. Because of the mix of code and rich text elements, these files are the ideal place to bring together an
-                            analysis and its results. They can also be executed to perform the data analysis in real-time, meaning the code
-                            is split into blocks which can be run independently.
-                        </p>                                       
+                        <img  class="media" width="1200" height="517" src="images/stats.jpeg" alt="TensorFlow versus PyTorch statistics">                       
                     </section>
-                    <section id="install">
-                        <h2>How to install Jupyter Notebook through Anaconda</h2>
-                        <p>
-                            One of the requirements here is Python 3.3 or greater, since Python 2.7 reached the end of its life
-                            on January 1st, 2020. The general recommendation is that you use the Anaconda distribution to install
-                            both Python and the Jupyter Notebook.
-                        </p>
-                        <img class="media" src="images/conda.png" width="1500" height="777" alt="Anaconda Logo" >
-                        <p>
-                            Anaconda's advantage is that you have access to over 720 packages that can easily be installed with Anaconda's
-                            package dependency and environment manager. You can follow the instructions for the installation of Anaconda by
-                            clicking <a href="https://docs.anaconda.com/anaconda/install/">here</a>.
-                        </p>
-                        <p>
-                            Further info on the installation and usage of Jupyter can be found
-                            <a href="https://jupyter.readthedocs.io/en/latest/install.html">here</a>.
-                        </p>
+                    <section id="advantages">
+                        <h2>The advantages of using PyTorch</h2>
+                        <ol>
+                            <li>
+                                TorchScript: One of the merits of PyTorch is its usability and readability. On the other hand, developers
+                                complain about boilerplate code, thereby, making it complex for new users. Although it has its own advantages,
+                                new users and researchers who mostly do not focus on production-level code, embrace PyTorch as coding is very
+                                straightforward. Torchscript delivers flexibility in transitioning between eager mode and graph mode for
+                                taking advantages of both the processes.
+                            </li>
+                            <li>
+                                Distributed Training: Through asynchronous execution, it helps researchers to parallelise computation for
+                                processing a large batch of input data. Researchers often prefer a plethora of data for their projects as
+                                their sole focus is to get the most accurate results. However, in production, organisations try to find
+                                the balance between quality and usability.
+                            </li>
+                            <li>
+                                Tools & Libraries: The above advantages, over the years, have led to an active community of researchers. 
+                                Therefore, one can get more insightful support to mitigate their problems. Consequently, aspirants of deep 
+                                learning technology are adopting PyTorch.
+                            </li>
+                        </ol>
                     </section>
-                    <section id="launch">
-                        <h2>Running Jupyter and creating a new notebook</h2>
+                    <section id="mobile">
+                        <h2>PyTorch on mobile?!</h2>
                         <p>
-                           To run Jupyter you can either search for the application in your search bar or simply launch the Anaconda Navigator where 
-                           all of conda's goods can be found in one place.
+                            While the TorchScript, distributed training, and libraries were enabling developers and researchers to streamline
+                            their workflows, with PyTorch 1.3 it has brought support to the model deployment to mobile devices. This has
+                            encouraged mobile app developers to switch to PyTorch and create production-level applications. 
                         </p>
-                        <img class="media" src="images/conda_menu.PNG" width="1913" height="978" alt="Anaconda Navigator main menu screen" >
                         <p>
-                            All you have to do from here is launch Jupyter, your default browser will create a new tab where you can find the application.
-                            You can open a notebook file from your PC and continue working on it or simply create a new one by clicking on the "new" button.
+                            If you want to learn more about PyTorch on mobile, you can click on the following
+                            <a href="https://pytorch.org/mobile/home/">link</a>.
                         </p>
-                        <img class="media" src="images/jupyter_new.PNG" width="1268" height="140" alt="Jupyter new file creation" >
-                        <p>
-                            And finally, we have our very first Python3 Jupyter Notebook!
-                        </p>
-                        <img  class="media" src="images/editor.png" width="2346" height="566" alt="Jupyter editor cells">
                     </section>
                 </article>
                 <div class="backtop">
@@ -137,15 +136,15 @@
             <div id="articles" class="article_links">
                 <ul id="links">    
                     <li>
-                        <a href="index3.html">
-                            <img src="images/neural.gif" width="1500" height="864" alt="Jupyter Notebook Editor starting guide">
-                            <p>How Convolutional Networks took over the Artificial Intelligence world.</p>
+                        <a href="jupyter.html">
+                            <img src="images/jupyter.png" width="1500" height="864" alt="Jupyter Notebook Editor starting guide">
+                            <p>Get started with the Jupyter notebook editor today.</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="images/pytorch.png" width="1500" height="864" alt="The rise of PyTorch">
-                            <p>The continuous growth of PyTorch in enteprise adoption.</p>
+                        <a href="index3.html">
+                            <img src="images/neural.gif" width="1500" height="864" alt="Jupyter Notebook Editor starting guide">
+                            <p>How Convolutional Networks took over the Artificial Intelligence world.</p>
                         </a>
                     </li>
                 </ul>

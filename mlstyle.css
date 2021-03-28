@@ -115,6 +115,15 @@ html {
   color: #000;
 }
 
+.main_content li {
+  font-size: 1.7rem;
+  margin: 1rem 0;
+}
+
+.main_content ol {
+  list-style-position: inside;
+}
+
 .main_content .backtop {
   display: flex;
   justify-content: center;
