@@ -11,7 +11,7 @@ html {
   margin: 0;
   padding: 0;
   font-size: 1rem;
-  outline: 0.1vw solid purple;
+  /*outline: 0.1vw solid purple;*/
 }
 
 .grid {
