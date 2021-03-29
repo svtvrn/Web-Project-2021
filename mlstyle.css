@@ -11,7 +11,7 @@ html {
   margin: 0;
   padding: 0;
   font-size: 1rem;
-  /*outline: 0.1vw solid purple;*/
+  outline: 0.1vw solid purple;
 }
 
 .grid {
@@ -81,7 +81,7 @@ html {
 }
 
 .main_content .author .social svg {
-  width: 1.4vw;
+  width: 1.6rem;
   height: auto;
 }
 
@@ -262,4 +262,72 @@ html {
   font-size: 1.2rem;
   text-align: center;
   color: #fff;
+}
+
+@media only screen and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem 15em 1fr 50em 6rem;
+    grid-template-areas:
+      'header'
+      'sidebar'
+      'main_content'
+      'article_links'
+      'footer';
+  }
+
+  .main_content {
+    margin: 0 0.5rem;
+  }
+
+  .main_content .author .social li {
+    margin: 0 0.8rem;
+  }
+
+  .main_content .backtop {
+    margin-top: 2rem;
+  }
+
+  .sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .sidebar nav {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-left: 1rem;
+  }
+
+  .sidebar nav p {
+    font-size: 1.5rem;
+  }
+
+  .sidebar li {
+    font-size: 1.3rem;
+    margin: 1em;
+  }
+
+  .sidebar li a {
+    font-size: 1.3rem;
+  }
+
+  .article_links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0;
+    position: relative;
+  }
+
+  .article_links li {
+    width: 90%;
+  }
+  .article_links p {
+    font-size: 1.4rem;
+  }
 }
