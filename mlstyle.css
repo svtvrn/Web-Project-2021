@@ -264,7 +264,7 @@ html {
   color: #fff;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 6rem 15em 1fr 50em 6rem;
@@ -280,6 +280,24 @@ html {
     margin: 0 0.5rem;
   }
 
+  #logo {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  img,
+  svg {
+    max-width: 100%;
+  }
+
+  .main_content .author {
+    flex-wrap: wrap;
+  }
+
+  .main_content .author .social ul {
+    margin-right: 2rem;
+  }
+
   .main_content .author .social li {
     margin: 0 0.8rem;
   }
@@ -291,7 +309,7 @@ html {
   .sidebar {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .sidebar nav {
@@ -299,11 +317,11 @@ html {
     margin: 0;
     padding: 0;
     position: relative;
-    margin-left: 1rem;
   }
 
   .sidebar nav p {
     font-size: 1.5rem;
+    text-align: center;
   }
 
   .sidebar li {
@@ -326,6 +344,7 @@ html {
 
   .article_links li {
     width: 90%;
+    margin: 1rem 0;
   }
   .article_links p {
     font-size: 1.4rem;
