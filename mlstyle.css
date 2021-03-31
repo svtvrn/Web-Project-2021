@@ -81,7 +81,7 @@ html {
 }
 
 .main_content .author .social svg {
-  width: 1.6rem;
+  width: 1.5vw;
   height: auto;
 }
 
@@ -285,8 +285,7 @@ html {
     max-width: 100%;
   }
 
-  img,
-  svg {
+  img {
     max-width: 100%;
   }
 
@@ -300,6 +299,11 @@ html {
 
   .main_content .author .social li {
     margin: 0 0.8rem;
+  }
+
+  .main_content .author .social svg {
+    width: 5vw;
+    height: auto;
   }
 
   .main_content .backtop {
@@ -345,6 +349,58 @@ html {
   .article_links li {
     width: 90%;
     margin: 1rem 0;
+  }
+  .article_links p {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 551px) {
+  .grid {
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 6rem 1fr 60em 8rem;
+    grid-template-areas:
+      'header header'
+      'sidebar main_content'
+      'sidebar article_links'
+      'footer footer';
+  }
+
+  .main_content .author .social li {
+    margin: 0 2vw;
+  }
+
+  .main_content .author .social svg {
+    width: 3vw;
+    height: auto;
+  }
+
+  .sidebar nav {
+    margin-left: 0.5em;
+  }
+
+  .sidebar li,
+  .sidebar li a {
+    font-size: 2vw;
+    margin: 4vh 0;
+  }
+
+  .sidebar nav p {
+    font-size: 2.5vw;
+  }
+
+  .article_links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0;
+    position: relative;
+  }
+
+  .article_links li {
+    width: 60vh;
+    margin: 2rem 0;
   }
   .article_links p {
     font-size: 1.4rem;
