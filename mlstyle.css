@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
+:root {
+  --clr--text-prim: #000;
+  --clr--text-side: rgb(83, 83, 83);
+  --clr--text-arti: #fff;
+  --clr--accent: #06d5e4;
+  --clr--accent-sec: #da5700;
+  --clr--night-hov: #35ee73;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -11,6 +20,7 @@ html {
   margin: 0;
   padding: 0;
   font-size: 1rem;
+  transition: color 0.5s ease 0.2s;
   outline: 0.1vw solid purple;
 }
 
@@ -33,13 +43,46 @@ html {
   background-color: #662952;
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: sticky;
+  justify-content: space-around;
+}
+
+.head-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
+
+#night-mode {
+  width: 10%;
+  background: none;
+  border: none;
+  margin-top: 2.5vh;
+}
+
+#night-mode:focus {
+  outline: none;
+}
+
+#night-mode svg {
+  cursor: pointer;
+  width: 100%;
+}
+
+#night-mode svg:hover path {
+  fill: var(--clr--night-hov);
+  transition: all 0.2s ease 0.2s;
+}
+
+#date {
+  color: #fff;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.3vw;
+  margin-top: 2vh;
 }
 
 #logo {
-  width: 22rem;
-  height: auto;
+  width: 20%;
 }
 
 .main_content {
@@ -52,9 +95,8 @@ html {
   text-align: left;
 }
 
-.main_content .author {
+.author {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
   font-family: 'Fira Sans', sans-serif;
   margin: 1rem 0;
@@ -62,31 +104,32 @@ html {
 
 .main_content .author h4,
 .main_content .author a {
+  color: var(--clr--text-prim);
   font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
 }
 
-.main_content .author .social ul {
+#social ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
   margin-right: 2vw;
 }
 
-.main_content .author .social li {
-  margin: 0 0.6vw;
+#social li {
+  margin: 0 1vw;
   width: 100%;
   height: auto;
 }
 
-.main_content .author .social svg {
+#social svg {
   width: 1.5vw;
   height: auto;
 }
 
-.main_content .author .social path {
-  fill: #06d5e4;
+#social path {
+  fill: var(--clr--accent);
 }
 
 .media {
@@ -98,21 +141,24 @@ html {
 .main_content h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  color: var(--clr--text-prim);
 }
 
 .main_content h2 {
   font-size: 2rem;
   margin: 3rem 0 2rem;
+  color: var(--clr--text-prim);
 }
 
 .main_content p {
   font-size: 1.7rem;
   margin: 2rem 0;
+  color: var(--clr--text-prim);
 }
 
 .main_content a {
   font-size: 1.7rem;
-  color: #000;
+  color: var(--clr--text-prim);
 }
 
 .main_content li {
@@ -124,18 +170,18 @@ html {
   list-style-position: inside;
 }
 
-.main_content .backtop {
+#backtop {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
 }
 
-.main_content .backtop a {
+#backtop a {
   text-decoration: none;
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.3rem;
   text-align: center;
-  color: rgba(181, 28, 129);
+  color: #b51c81;
 }
 
 .sidebar {
@@ -158,7 +204,7 @@ html {
 
 .sidebar nav p {
   font-size: 1.1vw;
-  color: rgb(83, 83, 83);
+  color: var(--clr--text-side);
 }
 
 .sidebar ol {
@@ -168,14 +214,14 @@ html {
 
 .sidebar li {
   margin: 2vh 0;
-  color: rgb(83, 83, 83);
+  color: var(--clr--text-side);
   font-size: 1vw;
 }
 
 .sidebar li a {
   font-size: 1vw;
   text-decoration: none;
-  color: rgb(83, 83, 83);
+  color: var(--clr--text-side);
 }
 
 .sidebar li a::after {
@@ -193,7 +239,7 @@ html {
 }
 
 .sidebar li a:hover {
-  color: #06d5e4;
+  color: var(--clr--accent);
   transition: all 0.4s ease 0s;
 }
 
@@ -212,7 +258,7 @@ html {
   align-items: center;
   font-family: 'Fira Sans', sans-serif;
   font-size: 1.1vw;
-  color: #fff;
+  color: var(--clr--text-arti);
   text-align: left;
   margin: 0.5vw 1vw;
 }
@@ -234,7 +280,7 @@ html {
   display: flex;
   flex-direction: column;
   margin-bottom: 3vw;
-  background-color: #da5700;
+  background-color: var(--clr--accent-sec);
   box-shadow: 0.1vw 0.1vw rgba(0, 0, 0, 0.034);
   border-radius: 0.2vw;
 }
@@ -257,17 +303,16 @@ html {
     rgba(181, 28, 129, 1) 0%,
     rgba(121, 9, 60, 1) 100%
   );
-  border-top: 10px solid #7474740e;
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.2rem;
   text-align: center;
-  color: #fff;
+  color: var(--clr--text-arti);
 }
 
 @media only screen and (max-width: 550px) {
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 6rem 15em 1fr 50em 6rem;
+    grid-template-rows: 5rem 15em 1fr 50em 6rem;
     grid-template-areas:
       'header'
       'sidebar'
@@ -281,8 +326,7 @@ html {
   }
 
   #logo {
-    width: 100%;
-    max-width: 100%;
+    width: 55%;
   }
 
   img {
@@ -293,20 +337,20 @@ html {
     flex-wrap: wrap;
   }
 
-  .main_content .author .social ul {
+  #social ul {
     margin-right: 2rem;
   }
 
-  .main_content .author .social li {
+  #social li {
     margin: 0 0.8rem;
   }
 
-  .main_content .author .social svg {
+  #social svg {
     width: 5vw;
     height: auto;
   }
 
-  .main_content .backtop {
+  #backtop {
     margin-top: 2rem;
   }
 
@@ -366,11 +410,15 @@ html {
       'footer footer';
   }
 
-  .main_content .author .social li {
+  #logo {
+    width: 40%;
+  }
+
+  #social li {
     margin: 0 2vw;
   }
 
-  .main_content .author .social svg {
+  #social svg {
     width: 3vw;
     height: auto;
   }
