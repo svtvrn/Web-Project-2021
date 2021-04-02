@@ -46,6 +46,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 6rem;
 }
 
 .head-cont {
@@ -181,7 +182,6 @@ html {
 }
 
 #backtop a {
-  text-decoration: dotted;
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.6rem;
   text-align: center;
@@ -189,6 +189,7 @@ html {
 }
 
 #rate-article p {
+  text-decoration-color: #b51c81;
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.3rem;
   text-align: center;
@@ -200,6 +201,51 @@ html {
   display: flex;
   justify-content: space-around;
   margin: 2rem 15vw;
+}
+
+#subscribe {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--clr--text-prim);
+  border-bottom: 0.1vw solid var(--clr--text-prim);
+}
+
+.form-cont {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Fjalla One', sans-serif;
+  margin: 5rem 22vw;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+
+.form-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-cont label {
+  font-size: 1.6rem;
+  line-height: 2;
+  margin: 1rem 0;
+  margin-left: 1.2rem;
+  color: var(--clr--text-prim);
+}
+
+.form-cont input,
+.form-cont select {
+  width: 70%;
+  padding: 1rem 0 1rem 1rem;
+  margin: 0 1rem;
+  border: 0.1vw solid var(--clr--accent);
+  border-radius: 0.2vw;
 }
 
 .rating-button svg {
@@ -333,6 +379,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 9rem;
   background: rgb(181, 28, 129);
   background: linear-gradient(
     90deg,
@@ -364,6 +411,10 @@ html {
     width: 55%;
   }
 
+  #date {
+    font-size: 1.6vh;
+  }
+
   img {
     max-width: 100%;
   }
@@ -387,6 +438,23 @@ html {
 
   #backtop {
     margin-top: 2rem;
+  }
+
+  .form-cont {
+    margin: 5rem 5vw;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-column {
+    width: 75%;
+  }
+
+  .form-cont input,
+  .form-cont select {
+    width: 100%;
   }
 
   .sidebar {
@@ -434,7 +502,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 900px) and (min-width: 551px) {
+@media only screen and (max-width: 970px) and (min-width: 551px) {
   .grid {
     grid-template-columns: 0.3fr 1fr;
     grid-template-rows: 6rem 1fr 60em 8rem;
@@ -449,6 +517,10 @@ html {
     width: 40%;
   }
 
+  #date {
+    font-size: 1.5vh;
+  }
+
   #social li {
     margin: 0 2vw;
   }
@@ -456,6 +528,10 @@ html {
   #social svg {
     width: 3vw;
     height: auto;
+  }
+
+  .form-cont {
+    margin: 5rem 5vw;
   }
 
   .sidebar nav {

@@ -20,9 +20,10 @@ var lightPalette = [ document.querySelector(".header").style.backgroundColor, do
 var likeButton = document.querySelector("#like");
 var dislikeButton = document.querySelector("#dislike");
 //Setting the event listeners
-likeButton.addEventListener('click',rateArticle);
-dislikeButton.addEventListener('click',rateArticle);
-
+if(likeButton!=null && dislikeButton!=null){
+    likeButton.addEventListener('click',rateArticle);
+    dislikeButton.addEventListener('click',rateArticle);
+}
 
 
 //Night mode color switch function
