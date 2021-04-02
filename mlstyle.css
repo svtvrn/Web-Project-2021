@@ -219,9 +219,16 @@ html {
   margin: 5rem 22vw;
 }
 
+legend {
+  font-size: 1.3rem;
+  color: var(--clr--text-prim);
+  text-decoration: underline var(--clr--text-prim);
+}
+
 .form-row {
   display: flex;
   flex-wrap: wrap;
+  border: none;
   margin-bottom: 5rem;
 }
 
@@ -250,6 +257,7 @@ html {
 
 .rating-button svg {
   cursor: pointer;
+  border-radius: 0.25vw;
 }
 
 .rating-button svg path {
@@ -449,12 +457,12 @@ html {
   }
 
   .form-column {
-    width: 75%;
+    width: 100%;
   }
 
   .form-cont input,
   .form-cont select {
-    width: 100%;
+    width: 75%;
   }
 
   .sidebar {
