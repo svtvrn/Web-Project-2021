@@ -21,6 +21,8 @@ html {
   padding: 0;
   font-size: 1rem;
   transition: color 0.5s ease 0.2s;
+  transition: background-color 0.5s ease 0.2s;
+
   outline: 0.1vw solid purple;
 }
 
@@ -54,7 +56,7 @@ html {
 }
 
 #night-mode {
-  width: 10%;
+  width: 2.5rem;
   background: none;
   border: none;
   margin-top: 2.5vh;
@@ -66,7 +68,7 @@ html {
 
 #night-mode svg {
   cursor: pointer;
-  width: 100%;
+  width: 50%;
 }
 
 #night-mode svg:hover path {
@@ -164,24 +166,58 @@ html {
 .main_content li {
   font-size: 1.7rem;
   margin: 1rem 0;
+  color: var(--clr--text-prim);
 }
 
 .main_content ol {
   list-style-position: inside;
+  color: var(--clr--text-prim);
 }
 
 #backtop {
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  margin: 5rem 0;
 }
 
 #backtop a {
-  text-decoration: none;
+  text-decoration: dotted;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #b51c81;
+}
+
+#rate-article p {
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.3rem;
   text-align: center;
   color: #b51c81;
+}
+
+#rating {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 15vw;
+}
+
+.rating-button svg {
+  cursor: pointer;
+}
+
+.rating-button svg path {
+  transition: fill 0.3s ease 0s;
+  fill: #b51c81;
+}
+
+.rating-button {
+  background: none;
+  border: none;
+}
+
+.rating-button:focus {
+  outline: none;
 }
 
 .sidebar {
@@ -305,7 +341,6 @@ html {
   );
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.2rem;
-  text-align: center;
   color: var(--clr--text-arti);
 }
 
@@ -447,7 +482,7 @@ html {
   }
 
   .article_links li {
-    width: 60vh;
+    width: 60vw;
     margin: 2rem 0;
   }
   .article_links p {

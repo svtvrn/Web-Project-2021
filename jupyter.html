@@ -11,7 +11,23 @@
     <body>
         <div class="grid">
             <header class="header">
-                <img id="logo" src="images/perceptron.svg" width="357" height="61" alt="Perceptron">         
+                <img id="logo" src="images/perceptron.svg" width="357" height="61" alt="Perceptron">
+                <div class="head-cont">
+                    <p id="date">Date</p>
+                    <button id="night-mode" value="off">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path id="night" data-name="night" d="M582.531,29.695a13.538,13.538,0,0,1-2.414-.333,
+                            13.292,13.292,0,0,1-2.3-.76,12.847,12.847,0,0,1-2.115-1.17,12.381,12.381,0,0,1-1.861-1.564c-.285-.294-.559-.6-.813-.925a11.887,
+                            11.887,0,0,1-1.334-2.1,11.688,11.688,0,0,1-.482-1.113,11.3,11.3,0,0,1-.688-4.605,11.535,11.535,0,0,1,.369-2.277,11.79,11.79,0,0,
+                            1,.821-2.174,12.051,12.051,0,0,1,1.255-2,12.333,12.333,0,0,1,1.671-1.765c.313-.272.645-.531.986-.773s.711-.476,1.084-.688A13.242,
+                            13.242,0,0,1,580,6.121a13.434,13.434,0,0,1,3.424-.411,15.342,15.342,0,0,0-3.636,6.887,8.648,8.648,0,0,0,1.048,6.5c2.362,3.717,7.6,
+                            5.3,13.669,4.12a12.056,12.056,0,0,1-1.985,2.648,12.744,12.744,0,0,1-2.766,2.113c-.373.212-.76.408-1.151.582s-.783.327-1.184.462a13.425,
+                            13.425,0,0,1-4.257.693Q582.847,29.709,582.531,29.695Zm4.244-18.836a1,1,0,0,1-.033-.255,1.043,1.043,0,1,1,0-2.085,1.009,1.009,0,0,
+                            1,.033-.256,1.038,1.038,0,0,1,2.011,0,1.088,1.088,0,0,1,.033.255,1.065,1.065,0,0,1,.262.035,1.042,1.042,0,0,1,0,2.017,1.022,1.022,0,0,
+                            1-.262.034,1.088,1.088,0,0,1-.033.255,1.038,1.038,0,0,1-2.011,0Zm1-1.3h0Z" transform="translate(-570.506 -5.709)" fill="#fff"/>
+                        </svg>
+                    </button>
+                </div>
             </header>
             <div id="content_nav" class="sidebar">
                 <nav class="contents">
@@ -39,7 +55,7 @@
                                 <h4>Author: <a href="#">Nikos Chasapis</a></h4>
                                 <h4>Date: Mar. 28, 2021</h4>
                             </div>
-                            <div class="social">
+                            <div id="social">
                                 <ul>
                                     <li>
                                         <a href="https://www.instagram.com/nikos.chasapis/?hl=el">
@@ -132,8 +148,29 @@
                         <img  class="media" src="images/editor.png" width="2346" height="566" alt="Jupyter editor cells">
                     </section>
                 </article>
-                <div class="backtop">
-                    <a href="#">RETURN TO THE TOP</a>
+                <div class="article-footer">
+                    <div id="backtop">
+                        <a href="#">RETURN TO THE TOP</a>
+                    </div>
+                    <div id="rate-article">
+                        <p>RATE THE ARTICLE</p>
+                        <ul id="rating">
+                            <li>
+                                <button id="like" class="rating-button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" transform='scale(1 1)' width="75" height="75" viewBox="0 0 75 75"><path id="like-path" d="M55.466,33.334,58.334,35.2V54.637l-3.831,
+                                        3.7H40.016l-5.225-5.212H28.125V37.5c7.762-.009,12.662-7.828,17.059-20.834h3.775v1.647l-2.084,6.45v8.572ZM75,0V75H0V0ZM62.5,32.944l-5.8-3.778H51.041V25.522l2.084-6.45V12.5H42.194c-4.5,
+                                        13.269-8.856,20.816-14.069,20.831V31.25H12.5V59.375H28.125V57.291h5.209L38.556,62.5H56.184L62.5,56.406Z"/></svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button id="dislike" class="rating-button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" transform='scale(1 -1)' width="75" height="75" viewBox="0 0 75 75"><path id="dislike-path" d="M55.466,33.334,58.334,35.2V54.637l-3.831,3.7H40.016l-5.225-5.212H28.125V37.5c7.762-.009,
+                                        12.662-7.828,17.059-20.834h3.775v1.647l-2.084,6.45v8.572ZM75,0V75H0V0ZM62.5,32.944l-5.8-3.778H51.041V25.522l2.084-6.45V12.5H42.194c-4.5,13.269-8.856,20.816-14.069,20.831V31.25H12.5V59.375H28.125V57.291h5.209L38.556,
+                                        62.5H56.184L62.5,56.406Z"/></svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </main>
             <div id="articles" class="article_links">
@@ -156,5 +193,6 @@
                 <h4>Copyright 2021</h4>
             </footer>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
