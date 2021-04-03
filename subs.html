@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -33,19 +33,20 @@
                     <h1 id="subscribe">SUBSCRIBE FOR MORE</h1>
                     <fieldset id="row-one" class="form-row">
                         <legend>Fill out your personal info</legend>
-                        <form class="form-column" action=”mailto:nikoschasapis99@gmail.com” method=”​POST” enctype=”multipart/form-data” name=”SubscribeForm”>
+                        <form class="form-column" name="info">
                             <label for="fname">First name:</label>
                             <input type="text" id="fname" name="fname" placeholder="First Name" required>
                             <label for="lname">Last name:</label>
-                            <input type="text" id="lname" name="lname" placeholder="Last Name">
+                            <input type="text" id="lname" name="lname" placeholder="Last Name" required>
                             <label for="birthday">Birthday:</label>
-                            <input type="date" id="birthday" name="birthday" placeholder="Street No.">
+                            <input type="date" id="birthday" name="birthday" required>
                         </form>
-                        <form class="form-column" action=”mailto:nikoschasapis99@gmail.com” method=”​POST” enctype=”multipart/form-data” name=”SubscribeForm”>
+                        <form class="form-column" name="info">
                             <label for="address">Address:</label>
-                            <input type="text" id="address" name="address" placeholder="Street No.">
+                            <input type="text" id="address" name="address" placeholder="Street No." required>
                             <label for="country">Country:</label>
-                            <select id="country" name="country" placeholder="Select Country">
+                            <input list="countries" id="country" name="country" placeholder="Choose from the list" required>
+                            <datalist id="countries">
                                 <option value="Afganistan">Afghanistan</option>
                                 <option value="Albania">Albania</option>
                                 <option value="Algeria">Algeria</option>
@@ -292,34 +293,110 @@
                                 <option value="Zaire">Zaire</option>
                                 <option value="Zambia">Zambia</option>
                                 <option value="Zimbabwe">Zimbabwe</option>
-                            </select>   
+                            </datalist>
                             <label for="phone">Phone:</label>
                             <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[+]{1}[0-9]{11,14}" required>
                         </form>
                     </fieldset>
                     <fieldset id="row-two" class="form-row">
                         <legend>Fill out your credentials</legend>
-                        <form class="form-column" action=”mailto:nikoschasapis99@gmail.com” method=”​POST” enctype=”multipart/form-data” name=”SubscribeForm”>
+                        <form class="form-column" name="credentials">
                             <label for="username">Username:</label>
-                            <input type="text" id="username" name="username" placeholder="Street No.">
+                            <input type="text" id="username" name="username" placeholder="At least five characters long" required>
                             <label for="email">E-mail:</label>
                             <input type="email" id="email" name="email" placeholder="example@mail.com" required>
                             
                         </form>
-                        <form class="form-column" action=”mailto:nikoschasapis99@gmail.com” method=”​POST” enctype=”multipart/form-data” name=”SubscribeForm”>
+                        <form class="form-column" name="credentials">
                             <label for="password">Password:</label>
-                            <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                            <label for="password">Confirm password:</label>
-                            <input type="password" id="password" name="password" placeholder="Enter your password again">
+                            <input type="password" id="password" name="password" placeholder="At least eight characters and two digits" required>
+                            <label for="confirm-password">Confirm password:</label>
+                            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required> 
                         </form>
                         
                     </fieldset>
-                    <fieldset id="survey" class="survey">
+                    <fieldset id="survey" class="survey form-column ">
                         <legend>Please fill out the following survey too</legend>
-                        <label>PeePee or PooPoo?</label>
+                        <label for="question-1">Which gender do you identify most with?</label>
+                        <select id="question-1" name="answer-1">
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="none">I'd rather not specify</option>
+                            <option value="other">Custom/Other</option>
+                        </select>
+                        <label for="question-2">What is the highest degree or level of school you have completed?</label>
+                        <select id="question-2" name="answer-2">
+                            <option value="none">No schooling completed</option>
+                            <option value="ninth">Nursery school to 9th grade</option>
+                            <option value="high">High school graduate</option>
+                            <option value="associate">Associate degree</option>
+                            <option value="bsc">Bachelor’s degree</option>
+                            <option value="msc">Master’s degree</option>
+                            <option value="phd">Doctorate degree</option>
+                        </select>
+                        <label for="question-3">What is your employment status?</label>
+                        <select id="question-3" name="answer-3">
+                            <option value="student">Student</option>
+                            <option value="working">Working</option>
+                            <option value="looking">Out of work and looking for work</option>
+                            <option value="not-looking">Out of work but not currently looking for work</option>
+                            <option value="retired">Retired</option>
+                            <option value="unable">Unable to work</option>
+                        </select>
+                        <label for="question-4">What's your connection</label>
+                        <select id="question-4" name="answer-4">
+                            <option>Ans1</option>
+                            <option>Ans1</option>
+                            <option>Ans1</option>
+                        </select>
+                        <label for="question-5">Question 1</label>
+                        <select id="question-5" name="answer-5">
+                            <option>Ans1</option>
+                            <option>Ans1</option>
+                            <option>Ans1</option>
+                        </select>
+                        <label for="question-6">Question 1</label>
+                        <select id="question-6" name="answer-6">
+                            <option>Ans1</option>
+                            <option>Ans1</option>
+                            <option>Ans1</option>
+                        </select>
+                        <label for="question-7">Question 1</label>
+                        <select id="question-7" name="answer-7">
+                            <option>Ans1</option>
+                            <option>Ans1</option>
+                            <option>Ans1</option>
+                        </select>
+                        <label for="question-8">Question 1</label>
+                        <select id="question-8" name="answer-8">
+                            <option>Ans1</option>
+                            <option>Ans1</option>
+                            <option>Ans1</option>
+                        </select>
+                        <label for="question-9">Were the articles on the site helpful?</label>
+                        <fieldset id="question-9">
+                            <span>
+                                <label>Yes</label>
+                                <input type="radio" value="Yes" name="question-9">
+                            </span>
+                            <span>
+                                <label>No</label>
+                                <input type="radio" value="No" name="question-9">
+                            </span>
+                        </fieldset>
+                        <label>Would you recommend this site to a friend?</label>
+                        <fieldset id="question-10">
+                            <span>
+                                <label>Yes</label>
+                                <input type="radio" value="Yes" name="question-10">
+                            </span>
+                            <span>
+                                <label>No</label>
+                                <input type="radio" value="No" name="question-10">
+                            </span>
+                        </fieldset>
                     </fieldset>
                 </div>
-
             </main>
             <footer class="footer">
                 <h4>Copyright 2021</h4>

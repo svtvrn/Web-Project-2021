@@ -255,6 +255,40 @@ legend {
   border-radius: 0.2vw;
 }
 
+#survey {
+  justify-content: center;
+  width: 100%;
+  border: none;
+}
+
+#survey > select {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#survey > fieldset {
+  display: flex;
+  border: none;
+  justify-content: center;
+}
+
+#survey span {
+  display: flex;
+  width: 8rem;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+#survey span > label {
+  font-size: 1.4rem;
+}
+
+input[type='radio'] {
+  transform: scale(1.5);
+  width: fit-content;
+  margin-left: 2rem;
+}
+
 .rating-button svg {
   cursor: pointer;
   border-radius: 0.25vw;
@@ -463,6 +497,10 @@ legend {
   .form-cont input,
   .form-cont select {
     width: 75%;
+  }
+
+  #survey select {
+    margin-left: 1rem;
   }
 
   .sidebar {
