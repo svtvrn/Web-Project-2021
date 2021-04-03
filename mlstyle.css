@@ -211,6 +211,10 @@ html {
   border-bottom: 0.1vw solid var(--clr--text-prim);
 }
 
+fieldset {
+  border: none;
+}
+
 .form-cont {
   display: flex;
   flex-direction: column;
@@ -228,7 +232,6 @@ legend {
 .form-row {
   display: flex;
   flex-wrap: wrap;
-  border: none;
   margin-bottom: 5rem;
 }
 
@@ -258,12 +261,10 @@ legend {
 #survey {
   justify-content: center;
   width: 100%;
-  border: none;
 }
 
 #survey > select {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1.5rem auto;
 }
 
 #survey > fieldset {
@@ -494,7 +495,7 @@ input[type='radio'] {
     width: 100%;
   }
 
-  .form-cont input,
+  .form-cont not input[type='radio'],
   .form-cont select {
     width: 75%;
   }

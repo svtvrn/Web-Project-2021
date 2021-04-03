@@ -29,19 +29,19 @@
                 </div>
             </header>
             <main class="main_content">
-                <div class="form-cont">
+                <form class="form-cont">
                     <h1 id="subscribe">SUBSCRIBE FOR MORE</h1>
                     <fieldset id="row-one" class="form-row">
                         <legend>Fill out your personal info</legend>
-                        <form class="form-column" name="info">
+                        <fieldset class="form-column" name="info">
                             <label for="fname">First name:</label>
                             <input type="text" id="fname" name="fname" placeholder="First Name" required>
                             <label for="lname">Last name:</label>
                             <input type="text" id="lname" name="lname" placeholder="Last Name" required>
                             <label for="birthday">Birthday:</label>
                             <input type="date" id="birthday" name="birthday" required>
-                        </form>
-                        <form class="form-column" name="info">
+                        </fieldset>
+                        <fieldset class="form-column" name="info">
                             <label for="address">Address:</label>
                             <input type="text" id="address" name="address" placeholder="Street No." required>
                             <label for="country">Country:</label>
@@ -296,24 +296,23 @@
                             </datalist>
                             <label for="phone">Phone:</label>
                             <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[+]{1}[0-9]{11,14}" required>
-                        </form>
+                        </fieldset>
                     </fieldset>
                     <fieldset id="row-two" class="form-row">
                         <legend>Fill out your credentials</legend>
-                        <form class="form-column" name="credentials">
+                        <fieldset class="form-column" name="credentials">
                             <label for="username">Username:</label>
                             <input type="text" id="username" name="username" placeholder="At least five characters long" required>
                             <label for="email">E-mail:</label>
                             <input type="email" id="email" name="email" placeholder="example@mail.com" required>
                             
-                        </form>
-                        <form class="form-column" name="credentials">
+                        </fieldset>
+                        <fieldset class="form-column" name="credentials">
                             <label for="password">Password:</label>
                             <input type="password" id="password" name="password" placeholder="At least eight characters and two digits" required>
                             <label for="confirm-password">Confirm password:</label>
                             <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required> 
-                        </form>
-                        
+                        </fieldset>
                     </fieldset>
                     <fieldset id="survey" class="survey form-column ">
                         <legend>Please fill out the following survey too</legend>
@@ -343,37 +342,57 @@
                             <option value="retired">Retired</option>
                             <option value="unable">Unable to work</option>
                         </select>
-                        <label for="question-4">What's your connection</label>
-                        <select id="question-4" name="answer-4">
-                            <option>Ans1</option>
-                            <option>Ans1</option>
-                            <option>Ans1</option>
-                        </select>
-                        <label for="question-5">Question 1</label>
+                        <label>Are you a robot?</label>
+                        <fieldset id="question-4" name="answer-4">
+                            <span>
+                                <label>Yes</label>
+                                <input type="radio" value="Yes" name="question-8">
+                            </span>
+                            <span>
+                                <label>No</label>
+                                <input type="radio" value="No" name="question-8">
+                            </span>
+                        </fieldset>
+                        <label for="question-5">Which field of Artificial Intelligence interests you more?</label>
                         <select id="question-5" name="answer-5">
-                            <option>Ans1</option>
-                            <option>Ans1</option>
-                            <option>Ans1</option>
+                            <option value="ml">Machine Learning</option>
+                            <option value="nn">Neural Networks</option>
+                            <option value="nlp">Natural Language Processing</option>
+                            <option value="cv">Computer Vision</option>
+                            <option value="gen">Genetic Programming</option>
+                            <option value="log">Mathematical Logic</option>
                         </select>
-                        <label for="question-6">Question 1</label>
-                        <select id="question-6" name="answer-6">
-                            <option>Ans1</option>
-                            <option>Ans1</option>
-                            <option>Ans1</option>
-                        </select>
-                        <label for="question-7">Question 1</label>
+                        <label>Are you currently studying or working in the Artificial Intelligence field?</label>
+                        <fieldset id="question-6" name="answer-6">
+                            <span>
+                                <label>Yes</label>
+                                <input type="radio" value="Yes" name="question-8">
+                            </span>
+                            <span>
+                                <label>No</label>
+                                <input type="radio" value="No" name="question-8">
+                            </span>
+                        </fieldset>
+                        <label for="question-7">What would you like to see more of on the site?</label>
                         <select id="question-7" name="answer-7">
-                            <option>Ans1</option>
-                            <option>Ans1</option>
-                            <option>Ans1</option>
-                        </select>
-                        <label for="question-8">Question 1</label>
-                        <select id="question-8" name="answer-8">
-                            <option>Ans1</option>
-                            <option>Ans1</option>
-                            <option>Ans1</option>
-                        </select>
-                        <label for="question-9">Were the articles on the site helpful?</label>
+                            <option value="news">News</option>
+                            <option value="tut">Tutorials</option>
+                            <option value="hist">Historical Articles</option>
+                            <option value="hist">Research</option>
+                            <option value="hist">Humorous/Weird News</option>
+                        </select>   
+                        <label>Did you like the design and layout of the website?</label>
+                        <fieldset id="question-8" name="answer-8">
+                            <span>
+                                <label>Yes</label>
+                                <input type="radio" value="Yes" name="question-8">
+                            </span>
+                            <span>
+                                <label>No</label>
+                                <input type="radio" value="No" name="question-8">
+                            </span>
+                        </fieldset>
+                        <label>Were the articles on the site helpful/enjoyable?</label>
                         <fieldset id="question-9">
                             <span>
                                 <label>Yes</label>
@@ -396,7 +415,7 @@
                             </span>
                         </fieldset>
                     </fieldset>
-                </div>
+                </form>
             </main>
             <footer class="footer">
                 <h4>Copyright 2021</h4>
