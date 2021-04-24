@@ -45,6 +45,7 @@
                 </nav>
             </div>
             <main class="main_content">
+                <a id="subscription" href="subs.html">Subscribe for more.</a>
                 <article id="pytorch_rise">
                     <section id="doc_title">
                         <h1>The continuous growth of PyTorch in enteprise adoption</h1>
@@ -90,7 +91,13 @@
                                 </ul>
                             </div>
                         </div>
-                        <img class="media" src="images/pytorch.png" width="1500" height="900" alt="Neural Network GIF">
+                        <img class="media"
+                            srcset="images/pytorch_mob.png 1172w,
+                                    images/pytorch.png 1954w"
+                            sizes="(max-width: 550px) 1172px,
+                                    1954px" 
+                            src="images/pytorch.png" alt="The rise of PyTorch" alt="Pytorch Logo"
+                        >
                     </section>
                     <section id="history">
                         <h2>The brief history of PyTorch</h2>
@@ -101,7 +108,13 @@
                             framework for both research and business. But PyTorch, which emerged out of Facebook in 2016, has quickly
                             caught up, thanks to community-driven improvements in ease of use and deployment.
                         </p>
-                        <img class="media" width="826" height="390" src="images/versus.png" alt="TensorFlow versus PyTorch" >
+                        <img class="media"
+                            srcset="images/versus_mob.png 413w,
+                                    images/versus.png 826w"
+                            sizes="(max-width: 550px) 413px,
+                                    826px" 
+                            src="images/versus.png" alt="TensorFlow versus PyTorch" 
+                        >
                         <p>
                             Facebook operates both PyTorch and Convolutional Architecture for Fast Feature Embedding (Caffe2), but models
                             defined by the two frameworks were mutually incompatible. The Open Neural Network Exchange (ONNX) project was

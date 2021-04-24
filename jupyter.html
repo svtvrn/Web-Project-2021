@@ -45,6 +45,7 @@
                 </nav>
             </div>
             <main class="main_content">
+                <a id="subscription" href="subs.html">Subscribe for more.</a>
                 <article id="jupyter_guide">
                     <section id="doc_title">
                         <h1>Get started with the Jupyter notebook editor today</h1>
@@ -90,7 +91,13 @@
                                 </ul>
                             </div>
                         </div>
-                        <img class="media" src="images/jupyter.png" width="1500" height="900" alt="Neural Network GIF">
+                        <img class="media" 
+                            srcset="images/jupyter_mob.png 900w,
+                                    images/jupyter.png 1500w"
+                            sizes="(max-width: 550px) 900px,
+                                    1500px" 
+                            src="images/jupyter.png" alt="Jupyter Notebook Editor starting guide"
+                        >
                     </section>
                     <section id="intro">
                         <h2>What is a Jupyter Notebook?</h2>
@@ -118,7 +125,13 @@
                             on January 1st, 2020. The general recommendation is that you use the Anaconda distribution to install
                             both Python and the Jupyter Notebook.
                         </p>
-                        <img class="media" src="images/conda.png" width="1500" height="777" alt="Anaconda Logo" >
+                        <img class="media" 
+                            srcset="images/conda_mob.png 900w,
+                                images/conda.png 1500w"
+                            sizes="(max-width: 550px) 900px,
+                                    1500px" 
+                            src="images/conda.png" alt="Anaconda Logo" 
+                        >
                         <p>
                             Anaconda's advantage is that you have access to over 720 packages that can easily be installed with Anaconda's
                             package dependency and environment manager. You can follow the instructions for the installation of Anaconda by
@@ -176,13 +189,23 @@
                 <ul id="links">    
                     <li>
                         <a href="index3.html">
-                            <img src="images/neural_thumb.png" width="1500" height="864" alt="Jupyter Notebook Editor starting guide">
+                            <img srcset="images/neural_thumb_mob.png 900w,
+                                images/neural_thumb.png 1500w"
+                                sizes="(max-width: 550px) 900px,
+                                        1500px" 
+                                src="images/neural_thumb.png"  alt="Neural Network Cat and Dog classification"
+                            >
                             <p>How Convolutional Networks took over the Artificial Intelligence world.</p>
                         </a>
                     </li>
                     <li>
                         <a href="pytorch.html">
-                            <img src="images/pytorch.png" width="1500" height="864" alt="The rise of PyTorch">
+                            <img srcset="images/pytorch_mob.png 1172w,
+                                images/pytorch.png 1954w"
+                                sizes="(max-width: 550px) 1172px,
+                                        1954px" 
+                                src="images/pytorch.png" alt="The rise of PyTorch"
+                            >
                             <p>The continuous growth of PyTorch in enteprise adoption.</p>
                         </a>
                     </li>
