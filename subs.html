@@ -29,6 +29,7 @@
                 </div>
             </header>
             <main class="main_content">
+                <a id="subscription" href="#" onclick="goBack()">Return to the article.</a>
                 <form class="form-cont" action="/action_page.php">
                     <h1 id="subscribe">SUBSCRIBE FOR MORE</h1>
                     <fieldset id="row-one" class="form-row">
@@ -295,7 +296,7 @@
                                 <option value="Zimbabwe">Zimbabwe</option>
                             </datalist>
                             <label for="phone">Phone:</label>
-                            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[+]{1}[0-9]{11,14}" required>
+                            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" maxlength="10">
                         </fieldset>
                     </fieldset>
                     <fieldset id="row-two" class="form-row">
@@ -308,7 +309,7 @@
                         </fieldset>
                         <fieldset class="form-column" name="credentials">
                             <label for="password">Password:</label>
-                            <input type="password" id="password" name="password" placeholder="At least eight characters and two digits" required>
+                            <input type="password" id="password" name="password" placeholder="At least eight characters and two digits" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                             <label for="confirm-password">Confirm password:</label>
                             <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required> 
                         </fieldset>

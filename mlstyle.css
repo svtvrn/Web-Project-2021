@@ -50,6 +50,7 @@
 #rate-article p,
 .footer,
 .form-cont,
+#subscribe,
 #submit-button {
   font-family: 'Fjalla One';
 }
@@ -65,7 +66,8 @@
   font-family: 'Old Standard TT';
 }
 
-.main_content p {
+.main_content p,
+#subscription {
   font-family: 'Lora';
 }
 
@@ -158,6 +160,12 @@ html {
   flex-direction: column;
   margin: 5rem 0.5rem;
   text-align: left;
+}
+
+#subscription {
+  text-align: center;
+  margin: 2.5rem 0 5rem 0;
+  font-weight: 600;
 }
 
 .author {
