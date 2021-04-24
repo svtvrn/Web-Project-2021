@@ -529,7 +529,7 @@ input[type='radio'] {
   }
 
   #date {
-    font-size: 1.6vh;
+    display: none;
   }
 
   img {
@@ -551,10 +551,6 @@ input[type='radio'] {
   #social svg {
     width: 5vw;
     height: auto;
-  }
-
-  #backtop {
-    margin-top: 2rem;
   }
 
   .form-cont {

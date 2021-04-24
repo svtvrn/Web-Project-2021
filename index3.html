@@ -119,7 +119,13 @@
                             (3 channels: red, green, blue). The network is "fed" such images as three separate layers of color stacked one on top of
                             the other. In the case of a grey-scale photograph we only have one such channel.
                         </p>
-                        <img class="media" src="images/channels.png" width="1505" height="731" alt="Grey scale and RGB Image layers">
+                        <img class="media" 
+                            srcset="images/channels_mob.png 706w,
+                                    images/channels.png 2352w"
+                            sizes="(max-width: 550px) 706px,
+                                    2352px"
+                            src="images/channels.png" alt="Grey scale and RGB Image layers"
+                        >
                         <p>
                             The input and output of the network can be expressed mathematically by multi-dimensional matrices in which the initial values
                             are the intensity of every pixel (one value per channel). After passing through a convolutional layer, the image becomes 
@@ -136,7 +142,13 @@
                         <p>
                             Below is the diagram of a forward-feeding CNN.
                         </p>
-                        <img class="media" src="images/cnn_example.png" width="1498" height="622" alt="CNN diagram of a digit" >
+                        <img class="media"
+                            srcset="images/cnn_example_mob.png 1123w,
+                            images/cnn_example.png 1872w"
+                            sizes="(max-width: 550px) 1123px,
+                                    1872px"
+                            src="images/cnn_example.png" alt="CNN diagram of a digit" 
+                        >
                     </section>
                     <section id="neocognitron">
                         <h2>Neocognitron, origin of the CNN architecture</h2>
@@ -145,7 +157,13 @@
                             of layers: convolutional layers and downsampling layers. The convolutional layer contains units whose fields cover a part of the previous
                             layer, while the downsampling layer works similarly to the pooling layer by computing the average of the activations of the units in its patch.
                         </p>
-                        <img class="media" src="images/neocognitron.PNG" width="1176" height="684" alt="Neocognitron schema diagram" >
+                        <img class="media"
+                            srcset="images/neocognitron_mob.png 706w,
+                                images/neocognitron.png 1176w"
+                            sizes="(max-width: 550px) 706px,
+                                    1176px" 
+                            src="images/neocognitron.PNG" alt="Neocognitron schema diagram" 
+                        >
                     </section>
                     <section id="gpus">
                         <h2>GPU implementations and the acceleration of CNNs</h2>
@@ -155,7 +173,13 @@
                             The first GPU implementation of a convolutional neural network was described two years later in 2006 by  K. Chellapilla et al. 
                             Chellapilla's implementation was 4 times faster than the equilevant implementation on a CPU 
                         </p>
-                        <img class="media" src="images/cores.png" width="1013" height="632" alt="CPU vs GPU cores">
+                        <img class="media"
+                            srcset="images/cores_mob.png 607w,
+                                images/cores.png 1013w"
+                            sizes="(max-width: 550px) 507px,
+                                    1013px" 
+                            src="images/cores.png" alt="CPU vs GPU cores"
+                        >
                         <p>
                             The advantage of the GPU over the CPU is tied to the GPU's architecture. GPUs were created to compute graphics, to create and process images 
                             which means they must be able to process lots of data at once. To do that, GPUs use a lot of "weaker" processors in order
