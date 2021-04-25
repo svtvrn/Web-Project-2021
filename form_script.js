@@ -10,11 +10,7 @@ function goBack() {
 }
 
 username.addEventListener('input',() =>{
-    if(username.value.length < 5){
-        username.setCustomValidity("The username needs to be at least 5 characters long!");
-        username.reportValidity();
-    }else{
-        username.setCustomValidity("");
+    if(!username.checkValidity()){
         username.reportValidity();
     }
 });
@@ -37,9 +33,6 @@ email.addEventListener('input',()=>{
 
 password.addEventListener('input',()=>{
     if(!password.checkValidity()){
-        password.reportValidity();
-    }else{
-        password.setCustomValidity("");
         password.reportValidity();
     }
 });

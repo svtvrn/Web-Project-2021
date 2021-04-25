@@ -96,16 +96,15 @@ html {
 
 .head-cont {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  width: 20%;
 }
 
 #night-mode {
   width: 2.5rem;
   background: none;
   border: none;
-  margin-top: 2.5vh;
+  margin: 0 0 0 5vw;
 }
 
 #night-mode:focus {
@@ -114,7 +113,7 @@ html {
 
 #night-mode svg {
   cursor: pointer;
-  width: 90%;
+  width: 100%;
 }
 
 #night-mode svg:hover path {
@@ -362,13 +361,13 @@ html {
   flex-direction: column;
   margin-bottom: 3vw;
   background-color: var(--clr--accent-sec);
-  border-radius: 0.2vw;
+  border-radius: 0.5vh;
 }
 
 .article_links img {
   width: 100%;
   height: auto;
-  border-radius: 0.2vw 0.2vw 0 0;
+  border-radius: 0.5vh 0.5vh 0 0;
 }
 
 #subscribe {
