@@ -1,7 +1,7 @@
 //Date object
 var date = new Date();
 //Adding date into the HTML files.
-var date_dom = (date.getUTCMonth()+1) +"-"+ date.getUTCDate() +"\n"+ date.getUTCFullYear();
+var date_dom = (date.getUTCMonth()+1) +"-"+ date.getUTCDate() +'-'+ date.getUTCFullYear();
 var weekday = date.toLocaleString('default', { weekday: 'short' });
 document.querySelector("#date").innerHTML =weekday+".\t"+ date_dom;
 weekdayHeaderTheme(date.getDay());
