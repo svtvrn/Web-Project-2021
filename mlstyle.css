@@ -71,7 +71,16 @@
   font-family: 'Lora';
 }
 
-:root {
+#dark-theme {
+  --clr--text-prim: #fff;
+  --clr--text-side: #fff;
+  --clr--text-arti: #fff;
+  --clr--accent: #fff;
+  --clr--accent-sec: #b51c81;
+  --clr--night-hov: #35ee73;
+}
+
+#light-theme {
   --clr--text-prim: #000;
   --clr--text-side: rgb(83, 83, 83);
   --clr--text-arti: #fff;
@@ -141,7 +150,7 @@ html {
 
 #night-mode svg:hover path {
   fill: var(--clr--night-hov);
-  transition: all 0.2s ease 0.2s;
+  transition: all 0.5s ease 0.1s;
 }
 
 #date {
@@ -207,22 +216,23 @@ html {
   margin: 1.5rem 0;
 }
 
+.main_content {
+  color: var(--clr--text-prim);
+}
+
 .main_content h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: var(--clr--text-prim);
 }
 
 .main_content h2 {
   font-size: 2rem;
   margin: 3rem 0 2rem;
-  color: var(--clr--text-prim);
 }
 
 .main_content p {
   font-size: 1.5rem;
   margin: 2rem 0;
-  color: var(--clr--text-prim);
 }
 
 .main_content a {
@@ -233,12 +243,10 @@ html {
 .main_content li {
   font-size: 1.7rem;
   margin: 1rem 0;
-  color: var(--clr--text-prim);
 }
 
 .main_content ol {
   list-style-position: inside;
-  color: var(--clr--text-prim);
 }
 
 .article-footer {

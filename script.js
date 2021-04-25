@@ -12,9 +12,7 @@ nightModeButton.addEventListener('click',nightMode);
 //Light theme palette saved to change to original color scheme
 var style = getComputedStyle(document.body);
 var lightPalette = [ document.querySelector(".header").style.backgroundColor, document.querySelector(".footer").style.background, 
-                    document.querySelector("body").style.backgroundColor, style.getPropertyValue('--clr--text-prim'),
-                    style.getPropertyValue('--clr--text-side'), style.getPropertyValue('--clr--accent'),
-                    style.getPropertyValue('--clr--accent-sec')];
+                    document.querySelector("body").style.backgroundColor];
 
 //Adding the rating buttons
 var likeButton = document.querySelector("#like");
@@ -25,7 +23,6 @@ if(likeButton!=null && dislikeButton!=null){
     dislikeButton.addEventListener('click',rateArticle);
 }
 
-
 //Night mode color switch function
 function nightMode(e){
     if(nightModeButton.value=="off"){
@@ -33,22 +30,15 @@ function nightMode(e){
         document.querySelector(".header").style.backgroundColor = "#000411";
         document.querySelector(".footer").style.background = "#000411";
         document.querySelector("body").style.backgroundColor = "#000411";
-        document.documentElement.style.setProperty('--clr--text-prim', '#fff');
-        document.documentElement.style.setProperty('--clr--text-side', '#fff');
-        document.documentElement.style.setProperty('--clr--accent', '#fff');
-        document.documentElement.style.setProperty('--clr--accent-sec', '#B51C81');
+        document.querySelector("#light-theme").id = 'dark-theme'
     }else{
         nightModeButton.setAttribute('value','off');
         document.querySelector(".header").style.backgroundColor = lightPalette[0];
         document.querySelector(".footer").style.background = lightPalette[1];
         document.querySelector("body").style.backgroundColor = lightPalette[2];
-        document.documentElement.style.setProperty('--clr--text-prim', lightPalette[3]);
-        document.documentElement.style.setProperty('--clr--text-side', lightPalette[4]);
-        document.documentElement.style.setProperty('--clr--accent', lightPalette[5]);
-        document.documentElement.style.setProperty('--clr--accent-sec', lightPalette[6]);
+        document.querySelector("#dark-theme").id = 'light-theme'
     }
 }
-
 
 //Header of the site changing colours based on the weekday number
 function weekdayHeaderTheme(day){
