@@ -44,6 +44,7 @@
   --clr--text-prim: #fff;
   --clr--text-side: #fff;
   --clr--text-arti: #fff;
+  --clr-link: #06d5e4;
   --clr--accent: #fff;
   --clr--accent-sec: #b51c81;
   --clr--night-hov: #35ee73;
@@ -53,6 +54,7 @@
   --clr--text-prim: #000;
   --clr--text-side: rgb(83, 83, 83);
   --clr--text-arti: #fff;
+  --clr-link: #da5700;
   --clr--accent: #06d5e4;
   --clr--accent-sec: #da5700;
   --clr--night-hov: #35ee73;
@@ -141,6 +143,8 @@ html {
 #subscription {
   text-align: center;
   margin: 2.5rem 0 5rem 0;
+  font-size: 1.4rem;
+  color: var(--clr--text-prim);
   font-weight: 600;
 }
 
@@ -202,9 +206,13 @@ html {
   margin: 2rem 0;
 }
 
-.main_content a {
+.main_content a:hover {
+  filter: brightness(1.5);
+}
+
+.main_content > article a {
   font-size: 1.5rem;
-  color: var(--clr--text-prim);
+  color: var(--clr-link);
 }
 
 .main_content li {
