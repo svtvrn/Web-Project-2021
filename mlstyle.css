@@ -77,7 +77,7 @@ html {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 0.9fr 2fr 0.9fr;
+  grid-template-columns: 0.9fr 1.8fr 0.9fr;
   grid-template-rows: 6rem 1fr 9rem;
   grid-template-areas:
     'header header header'
@@ -343,7 +343,7 @@ html {
   font-size: 1.1vw;
   color: var(--clr--text-arti);
   text-align: left;
-  margin: 0.5vw 1vw;
+  margin: 0.6vh 1.2vh;
 }
 
 .article_links a {
