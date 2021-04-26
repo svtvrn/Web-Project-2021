@@ -3,11 +3,11 @@ const password  = document.querySelector('#password');
 const username = document.querySelector('#username');
 const email = document.querySelector('#email');
 const phone = document.querySelector('#phone');
+const subscription = document.querySelector('#subscription');
 
-
-function goBack() {
+subscription.addEventListener('click',() => {
     window.history.back();
-}
+});
 
 username.addEventListener('input',() =>{
     if(!username.checkValidity()){
@@ -16,11 +16,7 @@ username.addEventListener('input',() =>{
 });
 
 phone.addEventListener('input',() =>{
-    if(/[a-zA-Z]/g.test(phone.value)){
-        phone.setCustomValidity("Invalid telephone number!");
-        phone.reportValidity();
-    }else{
-        phone.setCustomValidity("");
+    if(!phone.checkValidity()){
         phone.reportValidity();
     }
 });

@@ -494,7 +494,7 @@ input[type='radio'] {
 @media only screen and (max-width: 550px) {
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 6rem 1fr 45em 9rem;
+    grid-template-rows: 6rem 1fr 50em 9rem;
     grid-template-areas:
       'header'
       'main_content'
