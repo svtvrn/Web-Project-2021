@@ -205,7 +205,8 @@ html {
   margin: 2rem 0;
 }
 
-.main_content a:hover {
+.main_content section a:hover,
+.article-footer a:hover {
   filter: brightness(1.5);
 }
 
