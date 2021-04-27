@@ -50,7 +50,7 @@ function weekdayHeaderTheme(day){
             document.querySelector(".header").style.backgroundColor = "#009FB8";
             break;
         case 2:
-            document.querySelector(".header").style.backgroundColor = "#000411";
+            document.querySelector(".header").style.backgroundColor = "#402A2C";
             break;
         case 3:
             document.querySelector("header").style.backgroundColor = "#ECC046";
