@@ -44,10 +44,11 @@
   --clr--text-prim: #fff;
   --clr--text-side: #fff;
   --clr--text-arti: #fff;
-  --clr-link: #06d5e4;
-  --clr--accent: #fff;
+  --clr-link: #ff2ac1;
+  --clr--accent: #ff2ac1;
   --clr--accent-sec: #b51c81;
   --clr--night-hov: #35ee73;
+  --clr--arti--footer: #ff2ac1;
 }
 
 #light-theme {
@@ -58,6 +59,7 @@
   --clr--accent: #06d5e4;
   --clr--accent-sec: #da5700;
   --clr--night-hov: #35ee73;
+  --clr--arti--footer: #b51c81;
 }
 
 html {
@@ -181,7 +183,7 @@ html {
 }
 
 .media {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   margin: 1.5rem 0;
 }
@@ -234,13 +236,13 @@ html {
 
 #backtop > a {
   font-size: 1.6rem;
-  color: #b51c81;
+  color: var(--clr--arti--footer);
 }
 
 #rate-article p {
-  text-decoration-color: #b51c81;
+  text-decoration-color: var(--clr--arti--footer);
   font-size: 1.4rem;
-  color: #b51c81;
+  color: var(--clr--arti--footer);
 }
 
 #rating {
@@ -261,7 +263,7 @@ html {
 
 .rating-button svg path {
   transition: fill 0.3s ease 0s;
-  fill: #b51c81;
+  fill: var(--clr--arti--footer);
 }
 
 .rating-button {
