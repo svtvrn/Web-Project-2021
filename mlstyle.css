@@ -256,6 +256,10 @@ html {
   margin: 0 3rem;
 }
 
+#dislike {
+  transform: scale(1, -1);
+}
+
 .rating-button svg {
   cursor: pointer;
   border-radius: 0.25vw;

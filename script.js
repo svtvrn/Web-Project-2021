@@ -1,22 +1,22 @@
 //Date object
-var date = new Date();
+let date = new Date();
 //Adding date into the HTML files.
-var date_dom = (date.getUTCMonth()+1) +"-"+ date.getUTCDate() +'-'+ date.getUTCFullYear();
-var weekday = date.toLocaleString('default', { weekday: 'short' });
+let date_dom = (date.getUTCMonth()+1) +"-"+ date.getUTCDate() +'-'+ date.getUTCFullYear();
+let weekday = date.toLocaleString('default', { weekday: 'short' });
 document.querySelector("#date").innerHTML =weekday+".\t"+ date_dom;
 weekdayHeaderTheme(date.getDay());
 
 //Night mode button and its event listener
-var nightModeButton = document.querySelector("#night-mode");
+const nightModeButton = document.querySelector("#night-mode");
 nightModeButton.addEventListener('click',nightMode);
 //Light theme palette saved to change to original color scheme
-var style = getComputedStyle(document.body);
-var lightPalette = [ document.querySelector(".header").style.backgroundColor, document.querySelector(".footer").style.background, 
+let style = getComputedStyle(document.body);
+let lightPalette = [ document.querySelector(".header").style.backgroundColor, document.querySelector(".footer").style.background, 
                     document.querySelector("body").style.backgroundColor];
 
 //Adding the rating buttons
-var likeButton = document.querySelector("#like");
-var dislikeButton = document.querySelector("#dislike");
+const likeButton = document.querySelector("#like");
+const dislikeButton = document.querySelector("#dislike");
 //Setting the event listeners
 if(likeButton!=null && dislikeButton!=null){
     likeButton.addEventListener('click',rateArticle);
@@ -77,7 +77,7 @@ function rateArticle(e){
             document.querySelector("#dislike-path").style.fill = "#66295270";
         }else{
             document.querySelector("#like-path").style.fill = "#66295270";
-            document.querySelector("#dislike-path").style.fill = "#C53041";
+            document.querySelector("#dislike-path").style.fill = "#F71735";
         }
     }
 }
